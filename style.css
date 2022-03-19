@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    display: flex;
+}
+
+/* Aside Content Area */
+
+aside .container {
+    background-color: white;
+    width: 100%;
+}
+.logo {
+    padding: 40px 60px 40px 40px;
+}
+.logo img {
+    width: 220px;
+    cursor: pointer;
+}
+
+.navbar ul {
+   margin: 26px 45px 0 42px;
+}
+.navbar ul li {
+    margin: 14px 0;
+    list-style: none;
+}
+.navbar ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+.navbar ul li p {
+    font-size: 12px;
+    color: #808080;
+}
+.navbar ul .active a {
+    color: #860000;
+}
+.navbar ul li a:hover{
+    color: #860000;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-around;
+}
+.social ul li {
+    list-style: none;
+    width: 100%;
+    height: 45px;
+    border: 1px solid gray;
+}
+.social ul li img {
+    width: 18px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.twitter:hover {
+    background-color: #00acee;
+}
+.facebook:hover {
+    background-color: #3b5998;
+}
+.dribble:hover {
+    background-color: #ea4c89;
+}
+
+/* Main Content Area */
+
+.showcase {
+    background: url('imgs/darkened_surfer.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.text p {
+    font-size: 22px;
+}
+
+.text a p {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.button {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: #860000;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn1 p {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 13px 17px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn2 {
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+.btn2 p {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsiveness  */
+
+@media (max-width: 1000px){
+    .text h1 {
+        font-size: 3em;
+        font-weight: 600;
+    }
+}
+@media (max-width: 800px){
+    .container {
+        display: none;
+}
+    .showcase {
+        height: 100vh;
+    }
+    aside {
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    .logo img {
+        width: 80px;
+        position: absolute;
+        top: 10px;
+    }
+    .menu {
+        background: url('icons/menu.png');
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-repeat:no-repeat;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 500px){
+    .text h1 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .btn1 p {
+        padding-bottom: 12px;
+    }
+    .btn2 p {
+        padding: 13px 22px;
+    }
+}
+@media (max-width: 330px){
+    .text h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    .text p {
+        font-size: 13px;
+    }
+    .button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn1 {
+        margin-right: 0;
+    }
+    .btn2 {
+        margin-left: 0;
+    }
+}
